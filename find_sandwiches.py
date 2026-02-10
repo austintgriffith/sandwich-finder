@@ -254,7 +254,9 @@ def main():
     print(f"Output file: {OUTPUT_CSV}")
     print(f"\nPress Ctrl+C to stop (progress will be saved)\n")
     
-    BATCH_SIZE = 500  # Blocks per batch
+    # NOTE: Free-tier Alchemy only allows eth_getLogs over a 10-block range.
+    # If you upgrade your plan, you can safely increase this to speed up scanning.
+    BATCH_SIZE = 10  # Blocks per batch (must be <= 10 on free tier)
     total_sandwiches = 0
     start_time = time.time()
     

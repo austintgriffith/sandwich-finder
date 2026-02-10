@@ -95,3 +95,21 @@ Block N:
   [tx j] TV  - Victim buys token (gets worse price)
   [tx k] TA2 - Attacker sells token (backrun, profits)
 ```
+
+## Successfull Run
+```
+======================================================================
+🥪 Sandwich Attack Detector - 2022 to 2024
+======================================================================
+
+Block range: 13,916,166 to 21,525,419
+Total blocks: 7,609,253
+Starting from block: 13,941,166
+Blocks remaining: 7,584,253
+Output file: sandwiches.csv
+
+Press Ctrl+C to stop (progress will be saved)
+
+[ 0.34%] Block 13,941,826 | ETA: 23.4h | Sandwiches: 75      Request failed (attempt 1): ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+[ 0.38%] Block 13,944,836 | ETA: 96.1h | Sandwiches: 531    
+```
